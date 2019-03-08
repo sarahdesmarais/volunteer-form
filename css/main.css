@@ -2,6 +2,15 @@ html {
   font-family: "Noto Serif", serif;
 }
 
-lime-green {
+.lime-green {
   background-color: #70ad55;
+  color: #fff;
+}
+
+.optional {
+  color: #70ad55;
+}
+
+fieldset {
+  border: none;
 }

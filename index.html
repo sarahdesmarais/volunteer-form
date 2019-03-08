@@ -12,12 +12,140 @@
 </head>
 <body>
 
-  <header class="lime-green">
-    <h1>Apply to be a tree planter</h1>
-    <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+  <header class="lime-green push-2">
+    <div class="pad-t pad-b gutter-1-2">
+      <h1 class="push-1-2">Apply to be a tree planter</h1>
+      <p class="mega push-1-2">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+    </div>
   </header>
 
   <main>
+    <form class="wrapper gutter-1-2" method="POST">
+      <fieldset class="push-1-4 pad-b">
+        <legend class="mega push-1-4">Personal details</legend>
+        <div class="grid pad-t">
+          <div class="push unit [ xs-1 s-1 m-1-2 l-1-2 ] ">
+            <label class="push-1-8" for="name">Full Name</label>
+            <input id="name" name="name" required>
+            <p class="italic">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+          </div>
+          <div class="push unit [ xs-1 s-1 m-1-2 l-1-2 ] ">
+            <label class="push-1-8" for="nickname">What should we call you?</label>
+            <input id="nickname" name="nickname" required>
+            <p class="italic">What all your friends call you, e.g. “Liz”.</p>
+          </div>
+          <div class="push unit [ xs-1 s-1 m-1-2 l-1-2 ] ">
+            <label class="push-1-8" for="birthday">Date of birth</label>
+            <input id="birthday" name="birthday" type="date" required>
+          </div>
+          <div class="push unit [ xs-1 s-1 m-1-2 l-1-2 ] ">
+            <label class="push-1-8" for="size">T-shirt size</label>
+            <select id="size" name="_size">
+              <option value="">Select a t-shirt size</option>
+              <option>Fitted: XS</option>
+              <option>Fitted: S</option>
+              <option>Fitted: M</option>
+              <option>Fitted: L</option>
+              <option>Fitted: XL</option>
+              <option>Straight-cut: XS</option>
+              <option>Straight-cut: S</option>
+              <option>Straight-cut: M</option>
+              <option>Straight-cut: L</option>
+              <option>Straight-cut: XL</option>
+            </select>
+          </div>
+          <div class="push unit [ xs-1 s-1 m-1-2 l-1-2 ] ">
+            <label class="push-1-8" for="email">Email</label>
+            <input id="email" name="email" required>
+          </div>
+          <div class="push unit [ xs-1 s-1 m-1-2 l-1-2 ] ">
+            <label class="push-1-8" for="number">Phone number <span class="optional italic">(optional)</span></label>
+            <input id="number" name="number" required></input>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="push-1-4 pad-b">
+        <legend class="mega push-1-4">Address</legend>
+        <div class="grid pad-t">
+          <div class="push unit [ xs-1 s-1 m-1-2 l-1-2 ] ">
+            <label class="push-1-8" for="street">Street address</label>
+            <input id="street" name="street" required>
+          </div>
+          <div class="push unit [ xs-1 s-1 m-1-2 l-1-2 ] ">
+            <label class="push-1-8" for="city">City</label>
+            <input id="city" name="city" required>
+          </div>
+          <div class="push unit [ xs-1 s-1 m-1-2 l-1-2 ] ">
+            <label class="push-1-8" for="province">Province</label>
+            <select id="province" name="_province">
+              <option value="">Select a t-shirt province</option>
+              <option>Alberta</option>
+              <option>British Columbia</option>
+              <option>Manitoba</option>
+              <option>New Brunswick</option>
+              <option>Newfoundland & Labrador</option>
+              <option>Northwest Territories</option>
+              <option>Nova Scotia</option>
+              <option>Nunavut</option>
+              <option>Ontario</option>
+              <option>Prince Edward Island</option>
+              <option>Québec</option>
+              <option>Saskatchewan</option>
+              <option>Yukon</option>
+            </select>
+          </div>
+          <div class="push unit [ xs-1 s-1 m-1-2 l-1-2 ] ">
+            <label class="push-1-8" for="postal">Postal code</label>
+            <input id="postal" name="postal" required>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend class="mega push-1-4">What activites are you interested in?</legend>
+          <div class="grid">
+            <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] ">
+              <div>
+                <input type="checkbox" id="digging">
+                <label for="digging">Digging holes</label>
+              </div>
+              <div>
+                <input type="checkbox" id="diry">
+                <label for="dirty">Getting dirty</label>
+              </div>
+              <div>
+                <input type="checkbox" id="lifting">
+                <label for="lifting">Lifting heavy objects</label>
+              </div>
+              <div>
+                <input type="checkbox" id="driving">
+                <label for="driving">Driving people</label>
+              </div>
+            </div>
+
+            <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] ">
+              <div>
+                <input type="checkbox" id="trees">
+                <label for="trees">Transporting trees</label>
+              </div>
+              <div>
+                <input type="checkbox" id="photos">
+                <label for="photos">Taking photos</label>
+              </div>
+              <div>
+                <input type="checkbox" id="publishing">
+                <label for="publishing">Online publishing</label>
+              </div>
+              <div>
+                <input type="checkbox" id="manage">
+                <label for="manage">Managing people</label>
+              </div>
+            </div>
+          </div>
+      </fieldset>
+
+    </form>
   </main>
 
   <footer>
