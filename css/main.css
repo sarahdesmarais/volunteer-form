@@ -22,3 +22,7 @@ fieldset {
 .btn {
   border: 3px solid #6e8c62;
 }
+
+hr {
+  border-color: #70ad55;
+}
