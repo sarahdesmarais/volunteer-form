@@ -26,3 +26,7 @@ fieldset {
 hr {
   border-color: #70ad55;
 }
+
+textarea {
+  height: 10em;
+}
