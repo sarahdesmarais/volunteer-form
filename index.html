@@ -13,7 +13,7 @@
 <body>
 
   <header class="lime-green push-2">
-    <div class="pad-t pad-b gutter-1-2">
+    <div class="wrapper pad-t pad-b gutter-1-2">
       <h1 class="push-1-2">Apply to be a tree planter</h1>
       <p class="mega push-1-2">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
     </div>
@@ -151,7 +151,7 @@
             <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] ">
               <div class="push-1-4">
                 <input type="checkbox" id="shovel">
-                <label for="shovel">Shovelss</label>
+                <label for="shovel">Shovels</label>
               </div>
               <div class="push-1-4">
                 <input type="checkbox" id="gps">
@@ -196,10 +196,51 @@
           </div>
       </fieldset>
 
+      <fieldset>
+        <legend class="mega push-1-4">Do you have a valid driver's license?</legend>
+        <div class="push">
+          <input type="radio" id="yes-1">
+          <label for="yes-1">Yes</label>
+          <input type="radio" id="no-1">
+          <label class="gutter" for="no-1">No</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend class="mega push-1-4">Do you have a pick-up truck you'd be willing to use?</legend>
+        <div class="push">
+          <input type="radio" id="yes-2">
+          <label for="yes-2">Yes</label>
+          <input type="radio" id="no-2">
+          <label class="gutter" for="no-2">No</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend class="mega push-1-4">Do you have up-to-date first-aid certification?</legend>
+        <div class="push">
+          <input type="radio" id="yes-3">
+          <label for="yes-3">Yes</label>
+          <input type="radio" id="no-3">
+          <label class="gutter" for="no-3">No</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div>
+          <label class="push-1-4 mega" for="message">Please let us know any comments or questions you may have. <span class="optional italic">(optional)</span></label>
+          <textarea id="message"></textarea>
+        </div>
+      </fieldset>
+
+      <div class="text-center pad-b-2">
+          <button class="btn dark-green gutter mega" type="submit">Apply</button>
+      </div>
     </form>
   </main>
 
-  <footer>
+  <footer class="lime-green">
+    <div class="pad-t pad-b wrapper">
+      <small>© Tree Hugger International Organization</small>
+    </div>
   </footer>
 
 </body>

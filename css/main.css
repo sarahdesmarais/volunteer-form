@@ -14,3 +14,11 @@ html {
 fieldset {
   border: none;
 }
+
+.dark-green {
+  background-color: #6e8c62;
+}
+
+.btn {
+  border: 3px solid #6e8c62;
+}
